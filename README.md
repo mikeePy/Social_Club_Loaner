@@ -8,7 +8,7 @@ This website aims to provide the function in keeping track of a social club's as
 
 I have created a site that if you are not logged in as a superuser, you will not be able to see the management tools and all you can see is just an information website of the club itself. 
 
-Once you logged in, you will have the management tools shown in the navbar that allows you to managem your social club's assets.
+Once you logged in, you will have the management tools shown in the navbar that allows you to manage your social club's assets.
 
 Please note: You will have to create a superuser account in order to access these management tools.
 
