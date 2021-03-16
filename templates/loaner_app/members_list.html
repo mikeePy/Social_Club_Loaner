@@ -1,0 +1,18 @@
+{% extends 'loaner_app/baseplate.html' %}
+
+{% block content %}
+
+<h1>Members List</h1>
+    <p>The list of members and their membership status is shown below:</p>
+    <ol>
+    {% for member in members %}
+
+    <h2><li><a href="{{ member.id }}">{{ member.first_name }}  {{ member.last_name }}   </a></li></h2>
+
+    {% endfor %}
+    </ol>
+
+    <div class="container">
+    <p><a class="btn btn-warning" href="{% url 'member_create' %}">Create Member</a> </p>
+    </div>
+{% endblock  %}

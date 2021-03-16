@@ -1,0 +1,17 @@
+{% extends 'loaner_app/baseplate.html' %}
+
+{% block content %}
+
+    <h2>Equipment Detail:</h2>
+    <p>Name: {{ equipment_detail.name }}</p>
+    <p>Type: {{ equipment_detail.type }}</p>
+    <p>Lended to    : {{ equipment_detail.member }}</p>
+
+    <div class="container">
+    <p><a class="btn btn-warning" href="{% url 'equipment_update' pk=equipment_detail.pk %}">Edit Info</a> </p>
+    </div>
+    <div class="container">
+    <p><a class="btn btn-danger" href="{% url 'equipment_delete' pk=equipment_detail.pk %}">Delete Equipment</a> </p>
+    </div>
+
+{% endblock %}

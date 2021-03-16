@@ -1,0 +1,14 @@
+{% extends 'loaner_app/baseplate.html' %}
+
+{% block content %}
+<h1>Click Delete To Confirm Delete  </h1>
+    <p>Or click back on your browser</p>
+<form method="post">
+
+
+{% csrf_token %}
+<input type="submit" class="btn btn-danger" value="Delete">
+</form>
+
+
+{% endblock %}

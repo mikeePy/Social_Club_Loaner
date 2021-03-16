@@ -1,0 +1,17 @@
+{% extends 'loaner_app/baseplate.html' %}
+
+{% block content %}
+
+    <h2>Member Profile:</h2>
+    <p>First Name: {{ member_detail.first_name }}</p>
+    <p>Last  Name: {{ member_detail.last_name }}</p>
+    <p>Status    : {{ member_detail.member_status }}</p>
+
+    <div class="container">
+    <p><a class="btn btn-warning" href="{% url 'member_update' pk=member_detail.pk %}">Edit Info</a> </p>
+    </div>
+    <div class="container">
+    <p><a class="btn btn-danger" href="{% url 'member_delete' pk=member_detail.pk %}">Delete Member</a> </p>
+    </div>
+
+{% endblock %}
